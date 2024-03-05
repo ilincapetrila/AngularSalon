@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<head>
+    
+  <meta charset="UTF-8" />
+    
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+  <link rel="stylesheet" href="programare.component.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+    
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar">
+        <!-- LOGO -->
+             <!-- NAVIGATION MENU -->
+    <div class="logo">Clinique SilkBeauty</div>
+        
+    <ul class="nav-links">
+                   
+      <div class="menu">
+                
+
+        <li><a href="/">Home</a></li>
+                
+        <li><a href="/">About</a></li>
+
+                
+        <li class="services">
+                    <a href="/">Services</a>
+
+                    <!-- DROPDOWN MENU -->
+                    
+          <ul class="dropdown">
+                        
+            <li><a href="/">Hairstyling </a></li>
+                        
+            <li><a href="/">Makeup</a></li>
+                        
+            <li><a href="/">Laser Hair Removal</a></li>
+                        
+            <li><a href="/">Nails</a></li>
+                        
+            <li><a href="/">Facial Treatments</a></li>
+                      
+          </ul>
+
+                  
+        </li>
+
+                
+        <li><a href="/">Pricing</a></li>
+                
+        <li><a href="//localhost:4200/contact">Contact</a></li>
+              
+      </div>
+          
+    </ul>
+
+     
+  </nav>
+  <main>
+    <br />
+    <h1>FII GATA SA FII RASFATAT!</h1>
+    <section>
+      <mat-form-field class="example-form-field">
+        <mat-label>Prenumele</mat-label>
+        <input matInput type="text" [(ngModel)]="newClientFirstName" />
+        <button
+          *ngIf="inputValue"
+          matSuffix
+          mat-icon-button
+          aria-label="Clear"
+          (click)="inputValue = ''"
+        >
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <mat-form-field class="example-form-field">
+        <mat-label>Numele</mat-label>
+        <input matInput type="text" [(ngModel)]="newClientLastName" />
+        <button
+          *ngIf="inputValue"
+          matSuffix
+          mat-icon-button
+          aria-label="Clear"
+          (click)="inputValue = ''"
+        >
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+      <br />
+
+      <mat-form-field class="example-form-field">
+        <mat-label>Varsta</mat-label>
+        <input matInput type="Postal Code" [(ngModel)]="newClientPostalCode" />
+        <button
+          *ngIf="inputValue"
+          matSuffix
+          mat-icon-button
+          aria-label="Clear"
+          (click)="inputValue = ''"
+        >
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+      <br />
+
+      <mat-form-field class="example-form-field">
+        <mat-label>Interventie dorita</mat-label>
+        <mat-select
+          [(ngModel)]="this.newClientDescriere"
+          name="newClientDescriere"
+        >
+          <mat-option value="epilare">Epilare definitiva</mat-option>
+          <mat-option value="modelare">Modelare corporala</mat-option>
+          <mat-option value="makeup">Makeup</mat-option>
+          <mat-option value="manichiura">Manichiura/Pedichiura</mat-option>
+          <mat-option value="tratament">Tratament facial</mat-option>
+          <mat-option value="masaj">Masaj</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="example-form-field">
+        <mat-label>Data</mat-label>
+        <input
+          matInput
+          [matDatepicker]="picker"
+          placeholder="Select a date"
+          [(ngModel)]="newClientData"
+          name="newClientData"
+        />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field class="example-form-field">
+        <mat-label>Ora preferata</mat-label>
+        <input matInput type="text" [(ngModel)]="newClientOra" />
+        <button
+          *ngIf="inputValue"
+          matSuffix
+          mat-icon-button
+          aria-label="Clear"
+          (click)="inputValue = ''"
+        >
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+      <br />
+
+      <button (click)="addClient()" mat-raised-button>Programeaza-te</button>
+    </section>
+  </main>
+  <footer>
+    <div class="text">
+      <br />
+      <p>CLINIQUE SILKBEAUTY</p>
+    </div>
+    <div class="icon">
+      <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+      <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+      <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+    </div>
+  </footer>
+</body>

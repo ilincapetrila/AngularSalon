@@ -1,0 +1,209 @@
+/* NAVBAR STYLING STARTS */
+.navbar {
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(237, 60, 146);
+    color: #fff;
+    font-family: Monaco;
+    height: 130px;
+    }
+    
+    .nav-links a {
+        color: #fff;
+        font-family: Monaco;
+        }
+        
+        /* LOGO */
+.logo {
+        font-size: 32px;
+        font-family: Bebas Neue;
+        }
+        
+        /* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    font-family: Monaco;
+        }
+        
+.menu li:hover {
+    background-color: rgb(237, 60, 146);;
+    border-radius: 5px;
+    transition: 0.3s ease;
+        }
+        
+.menu li {
+    padding: 5px 14px;
+        }
+        
+        /* DROPDOWN MENU */
+.services {
+    position: relative; 
+        }
+        
+.dropdown {
+    background-color: rgb(241, 101, 164);
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+        }
+        
+.dropdown li + li {
+    margin-top: 10px;
+        }
+        
+        
+.dropdown li:hover {
+    background-color: rgb(237, 60, 146);
+        }
+        
+.services:hover .dropdown {
+    display: block;
+        }    
+
+ 
+        
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center
+          }
+          
+          img {
+            max-width: 300px;
+            max-height:100%;
+          }
+          
+          .text {
+            font-size: 20px;
+            padding-left: 10px;
+            font-family: Monaco;
+          }        
+main{
+    background-image: url("src\assets\images\spa3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: 85%;
+    font-family: Monaco;
+} 
+h1{
+    margin-left: 20%;
+    max-width: 500px;
+    color:black ;
+    font-size: xxx-large;
+    word-spacing: 20px;
+    row-gap: 10ch;
+    white-space: normal;
+    line-height: 3ch;
+    font-family: Monaco;
+}
+h2{
+    
+    color: rgb(237, 60, 146);
+    margin-left: 20%;
+    font-family: Monaco;
+    font-size: x-large;
+}
+
+button{
+    background-color:rgb(237, 60, 146);
+    width: 25%;
+    size: 50px;
+    margin-left: 50%;
+    font-size: x-large;
+    border-radius: 1%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    height: 80px;
+}
+.button {
+    margin-left: 50%;
+    border-radius: 4px;
+    background-color: rgb(237, 60, 146);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 120px;
+    
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.flexcontainer{
+    background-color: rgb(248, 199, 236);
+    height: 80%;
+}
+.flexcontainer1{
+    margin-left: 20%;
+    font-size: xx-large;
+    font-family: Monaco;
+}
+.flexcontainer2{
+    margin-left: 40%;
+    font-size: medium;
+    font-family: Monaco;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+  i{
+    margin-right: 40px;
+    font-size: xx-large;
+  }
+
+  footer{
+    background-color: rgb(237, 60, 146);
+    height:30%;
+  }
+  .text{
+    
+    margin-left: 40%;
+    font-size: xx-large;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  .icon{
+    margin-left: 47%;
+  }
